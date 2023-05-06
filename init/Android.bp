@@ -28,10 +28,3 @@ cc_library_static {
         "libbase"
     ]
 }
-
-prebuilt_etc {
-    name: "init.oplus_extras.rc",
-    src: "init.oplus_extras.rc",
-    sub_dir: "init",
-    device_specific: true,
-}
