@@ -44,3 +44,9 @@ type vendor_proc_oplus_version, fs_type, proc_type;
 type proc_vm_dirty, fs_type, proc_type;
 type proc_sched_stune, fs_type, proc_type;
 type proc_sched_assist, fs_type, proc_type;
+
+# Fsync
+type sysfs_sync, fs_type, sysfs_type;
+
+# Workqueue
+type sysfs_workqueue, fs_type, sysfs_type;

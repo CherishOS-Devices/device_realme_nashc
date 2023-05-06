@@ -49,3 +49,7 @@
 
 # Vibrator
 /vendor/bin/hw/android\.hardware\.vibrator-service\.mediatek                                                           u:object_r:hal_vibrator_default_exec:s0
+
+# Sysfs files (OPlusExtras)
+/sys/module/sync/parameters/fsync_enabled                                                 u:object_r:sysfs_sync:s0
+/sys/module/workqueue/parameters/power_efficient                                          u:object_r:sysfs_workqueue:s0
