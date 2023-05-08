@@ -33,7 +33,7 @@ BUILD_FINGERPRINT := realme/RMX3085/RMX3085L1:12/SP1A.210812.016/R.GDPR.c3619e_1
 # FOD animations
 EXTRA_UDFPS_ANIMATIONS := true
 
-# Cherish Unofficial 
+# Cherish Official 
 CHERISH_BUILD_TYPE := OFFICIAL
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ro.cherish.maintainer=Eren Yeager
