@@ -583,5 +583,54 @@
 
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
+	
+	<!-- Whether the device supports Smart Pixels -->
+	<bool name="config_supportSmartPixels">true</bool>
+	
+	<!-- Whether to show min/max refresh rate in display settings -->
+    <bool name="config_show_refresh_rate_controls">true</bool>
+    <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
+	
+	<!-- Night Light FOD -->
+    <bool name="disable_fod_night_light">true</bool>
+	
+	<!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+	
+	<!-- Whether Screen Off FOD Working for this Device -->
+    <bool name="config_screenOffFodWorking">true</bool>
+	
+	<!-- Whether device supports an alt. ambient display -->
+	<bool name="config_alt_ambient_display">true</bool>
+	
+	<!-- Whether or not to use intelligent profiles -->
+	<bool name="config_intelligent_performance_profile">true</bool>
 
+	<!-- Initially set all to balanced with persist.spectrum.profile=0
+	For example if you want to change performance profile from balanced to performance (in my case performance profile is persist.spectrum.profile=1 )
+	then set <string name="config_performance_profile" translatable="false">1</string>, override these config via device tree.-->
+	<string name="config_balanced_profile" translatable="false">0</string>
+	<string name="config_performance_profile" translatable="false">3</string>
+	<string name="config_powersave_profile" translatable="false">2</string>
+	<string name="config_screen_off_profile" translatable="false">2</string>
+	
+	<!-- The CPU temperature sensor path, defaults to empty -->
+	<string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone4/temp</string>
+
+	<!-- The CPU temperature divider, if needed -->
+	<integer name="config_cpuTempDivider" translatable="false">10</integer>
+	
+	<!-- Smart Charing is available -->
+	<bool name="config_smartChargingAvailable">true</bool>
+
+	<!-- Smart charge sysfs node and value for suspend/resume charging-->
+	<string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+	<string name="config_SmartChargingSupspendValue" translatable="false">1</string>
+	<string name="config_SmartChargingResumeValue" translatable="false">0</string>
+	
+	<!-- Battery health -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
 </resources>
