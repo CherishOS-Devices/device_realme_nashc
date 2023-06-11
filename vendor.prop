@@ -145,6 +145,7 @@ persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
 persist.vendor.radio.fd.r8.counter=150
 persist.vendor.radio.fd.off.r8.counter=50
+persist.sys.radio.force_lte_ca=true
 ro.vendor.mtk_fd_support=1
 ro.vendor.mtk_single_bin_modem_support=1
 ro.vendor.mtk_wapi_support=1
