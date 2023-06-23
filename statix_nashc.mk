@@ -12,10 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common StatiX stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
-PRODUCT_NAME := lineage_nashc
+# Statix flags
+INCLUDE_PIXEL_LAUNCHER := true
+ENABLE_GAMETOOLS := true
+
+PRODUCT_NAME := statix_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
