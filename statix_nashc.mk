@@ -19,6 +19,7 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 # Statix flags
 INCLUDE_PIXEL_LAUNCHER := true
 ENABLE_GAMETOOLS := true
+TARGET_USES_BLUR := true
 
 PRODUCT_NAME := statix_nashc
 PRODUCT_DEVICE := nashc
