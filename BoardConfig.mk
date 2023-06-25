@@ -137,7 +137,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2023-04-05
 
 # FOD
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := //vendor/hardware/oplus:libudfps_extension.oplus
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
