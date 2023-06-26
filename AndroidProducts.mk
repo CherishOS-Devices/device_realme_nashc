@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_nashc.mk
+    $(LOCAL_DIR)/cherish_nashc.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_nashc-user \
-    statix_nashc-userdebug \
-    statix_nashc-eng
+    cherish_nashc-user \
+    cherish_nashc-userdebug \
+    cherish_nashc-eng
