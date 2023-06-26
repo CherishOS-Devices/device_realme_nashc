@@ -6,6 +6,6 @@
 
 soong_namespace {
     imports: [
-        "vendor/hardware/oplus",
+        "hardware/oplus",
     ]
 }
